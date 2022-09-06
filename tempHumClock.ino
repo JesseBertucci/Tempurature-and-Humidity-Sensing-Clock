@@ -111,7 +111,7 @@ void loop() {
             if(year == 2099){                        // Max year is 2099, will cycle back to 2021 if exceeded
               year = 2021;                
             }
-            delay(125);
+            delay(200);
           }
           break;
         case 1:
@@ -127,7 +127,7 @@ void loop() {
             if(month == 13){                         // If 12th month is exceeded, 1st month will be cycled back to 
               month = 1;
             }
-            delay(125);
+            delay(200);
           }
           break;
         case 2:
@@ -145,7 +145,7 @@ void loop() {
             if(day == 32){                           // If 31st day is exceeded, 1st day will be cycled back to 
               day = 1;
             }
-            delay(125);
+            delay(200);
           }
           break;
         case 3:   
@@ -169,7 +169,7 @@ void loop() {
             if(hour == 25){                          // If 24th hour is exceeded, 1st hour will be cycled back to 
               hour = 1;
             }
-            delay(125);
+            delay(200);
           }
           break;
         case 4:   
@@ -187,7 +187,7 @@ void loop() {
             if(minute == 60){                         // If 59th minute is exceeded, 1st minute will be cycled back to 
               minute = 0;
             }
-            delay(125);
+            delay(200);
           }
           break;
       }
@@ -210,5 +210,5 @@ void loop() {
   Serial.print(now.toString(buf2));    
 */
 
-  delay(250);
+  delay(1000);
 }
